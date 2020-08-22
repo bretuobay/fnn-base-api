@@ -17,7 +17,7 @@ function generateFakeNews() {
   }));
 }
 
-router.get("/:category/:channel", function (req, res, next) {
+router.get("/:category", function (req, res, next) {
   res.json(generateFakeNews());
 });
 
